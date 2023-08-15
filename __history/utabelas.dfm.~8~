@@ -1,0 +1,107 @@
+object dm: Tdm
+  Height = 353
+  Width = 525
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\Users\leand\Documents\BancoDados\CRUD.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'Port=3050'
+      'CharacterSet=ISO8859_1'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 40
+    Top = 16
+  end
+  object FDTransaction1: TFDTransaction
+    Connection = FDConnection1
+    Left = 160
+    Top = 16
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 280
+    Top = 16
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    Left = 424
+    Top = 16
+  end
+  object tbclientes: TFDTable
+    Active = True
+    IndexFieldNames = 'CODCLI'
+    Connection = FDConnection1
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'CLIENTES'
+    Left = 32
+    Top = 96
+    object tbclientesCODCLI: TIntegerField
+      AutoGenerateValue = arAutoInc
+      FieldName = 'CODCLI'
+      Origin = 'CODCLI'
+    end
+    object tbclientesCADCLI: TDateField
+      FieldName = 'CADCLI'
+      Origin = 'CADCLI'
+      Required = True
+      EditMask = '99/99/9999'
+    end
+    object tbclientesNOMCLI: TStringField
+      FieldName = 'NOMCLI'
+      Origin = 'NOMCLI'
+      Required = True
+      Size = 60
+    end
+    object tbclientesENDCLI: TStringField
+      FieldName = 'ENDCLI'
+      Origin = 'ENDCLI'
+      Required = True
+      Size = 60
+    end
+    object tbclientesBAICLI: TStringField
+      FieldName = 'BAICLI'
+      Origin = 'BAICLI'
+      Required = True
+      Size = 60
+    end
+    object tbclientesCIDCLI: TStringField
+      FieldName = 'CIDCLI'
+      Origin = 'CIDCLI'
+      Required = True
+      Size = 60
+    end
+    object tbclientesESTCLI: TStringField
+      FieldName = 'ESTCLI'
+      Origin = 'ESTCLI'
+      Required = True
+      FixedChar = True
+      Size = 2
+    end
+    object tbclientesDATCLI: TDateField
+      FieldName = 'DATCLI'
+      Origin = 'DATCLI'
+      Required = True
+      EditMask = '99/99/9999'
+    end
+    object tbclientesEMACLI: TStringField
+      FieldName = 'EMACLI'
+      Origin = 'EMACLI'
+      Required = True
+      Size = 60
+    end
+    object tbclientesCPFCLI: TStringField
+      FieldName = 'CPFCLI'
+      Origin = 'CPFCLI'
+      Required = True
+      EditMask = '999.999.999-99'
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = tbclientes
+    Left = 128
+    Top = 96
+  end
+end

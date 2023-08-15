@@ -1,0 +1,71 @@
+object fconsultacli: Tfconsultacli
+  Left = 0
+  Top = 0
+  Caption = 'CONSULTA DADOS DOS CLIENTES'
+  ClientHeight = 448
+  ClientWidth = 717
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poMainFormCenter
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 717
+    Height = 65
+    Align = alTop
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 713
+    object Label1: TLabel
+      Left = 8
+      Top = 8
+      Width = 162
+      Height = 17
+      Caption = 'Digite o Nome do Cliente:'
+    end
+    object Edit1: TEdit
+      Left = 176
+      Top = 5
+      Width = 249
+      Height = 25
+      CharCase = ecUpperCase
+      TabOrder = 0
+      Text = 'EDIT1'
+      OnChange = Edit1Change
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 65
+    Width = 717
+    Height = 383
+    Align = alClient
+    TabOrder = 1
+    ExplicitWidth = 713
+    ExplicitHeight = 382
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 715
+      Height = 381
+      Align = alClient
+      DataSource = dm.dsqconcli
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -12
+      TitleFont.Name = 'Segoe UI'
+      TitleFont.Style = []
+    end
+  end
+end

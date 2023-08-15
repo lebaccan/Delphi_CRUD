@@ -1,0 +1,100 @@
+object fbuscaexccli: Tfbuscaexccli
+  Left = 0
+  Top = 0
+  Caption = 'Buscar nome do cliente'
+  ClientHeight = 316
+  ClientWidth = 660
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Segoe UI'
+  Font.Style = [fsBold]
+  Position = poMainFormCenter
+  OnActivate = FormActivate
+  TextHeight = 17
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 660
+    Height = 41
+    Align = alTop
+    TabOrder = 0
+    ExplicitWidth = 656
+    object Label1: TLabel
+      Left = 8
+      Top = 12
+      Width = 158
+      Height = 17
+      Caption = 'Digite o nome do cliente:'
+    end
+    object Edit1: TEdit
+      Left = 172
+      Top = 9
+      Width = 173
+      Height = 25
+      CharCase = ecUpperCase
+      TabOrder = 0
+      OnChange = Edit1Change
+    end
+    object btlimpar: TBitBtn
+      Left = 400
+      Top = 9
+      Width = 97
+      Height = 25
+      Caption = '&Limpar'
+      TabOrder = 1
+    end
+    object btfechar: TBitBtn
+      Left = 552
+      Top = 9
+      Width = 89
+      Height = 25
+      Caption = '&Fechar'
+      TabOrder = 2
+      OnClick = btfecharClick
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 41
+    Width = 660
+    Height = 275
+    Align = alClient
+    DataSource = dsqbuscacli
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = [fsBold]
+    OnCellClick = DBGrid1CellClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'CODCLI'
+        Title.Caption = 'C'#243'digo:'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOMCLI'
+        Title.Caption = 'Nome do Cliente:'
+        Width = 497
+        Visible = True
+      end>
+  end
+  object dsqbuscacli: TDataSource
+    DataSet = qbuscacli
+    Left = 528
+    Top = 176
+  end
+  object qbuscacli: TFDQuery
+    Active = True
+    Connection = dm.FDConnection1
+    SQL.Strings = (
+      'SELECT CODCLI, NOMCLI FROM CLIENTES')
+    Left = 440
+    Top = 176
+  end
+end

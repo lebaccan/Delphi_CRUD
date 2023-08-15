@@ -1,0 +1,43 @@
+unit uconcli;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids;
+
+type
+  Tfconsultacli = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Edit1: TEdit;
+    Panel2: TPanel;
+    DBGrid1: TDBGrid;
+    procedure Edit1Change(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fconsultacli: Tfconsultacli;
+
+implementation
+
+{$R *.dfm}
+
+Uses utabelas;
+
+procedure Tfconsultacli.Edit1Change(Sender: TObject);
+begin
+  with dm.qconcli do
+  begin
+    close;
+    sql.Clear;
+    sql.Add('select * from clientes where nomcli like ''%'+Edit1.Text+'%''');
+  end;
+end;
+
+end.

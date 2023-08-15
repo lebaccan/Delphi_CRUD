@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/27 19:43:43.000.911,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/27 19:53:07.000.198,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/28 14:01:22.000.288,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 21:58:43.000.476,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/09 15:53:52.000.242,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/02 19:03:51.000.177,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/02 19:04:09.000.308,=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/07/02 19:31:08.000.919,C:\Projetos\ProjetoEderMello\Unit1.dfm=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/07/02 19:31:08.000.919,C:\Projetos\ProjetoEderMello\Unit1.pas=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/02 19:31:36.000.294,C:\Projetos\ProjetoEderMello\utabelas.dfm=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2023/07/02 19:31:36.000.294,C:\Projetos\ProjetoEderMello\utabelas.pas=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/07/02 19:31:57.000.150,C:\Projetos\ProjetoEderMello\Crud.dproj=C:\Users\leand\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/07/02 19:37:50.000.073,=C:\Projetos\ProjetoEderMello\Unit1.pas</Transaction>
+    <Transaction>2023/07/02 19:58:18.000.059,C:\Projetos\ProjetoEderMello\uclientes.pas=C:\Projetos\ProjetoEderMello\Unit1.pas</Transaction>
+    <Transaction>2023/07/02 19:58:18.000.059,C:\Projetos\ProjetoEderMello\uclientes.dfm=C:\Projetos\ProjetoEderMello\Unit1.dfm</Transaction>
+    <Transaction>2023/07/04 20:36:55.000.177,=C:\Projetos\ProjetoEderMello\Unit2.pas</Transaction>
+    <Transaction>2023/07/04 20:49:12.000.132,C:\Projetos\ProjetoEderMello\Unit2.pas=C:\Projetos\ProjetoEderMello\uconcli.pas</Transaction>
+    <Transaction>2023/07/04 20:49:12.000.132,C:\Projetos\ProjetoEderMello\Unit2.dfm=C:\Projetos\ProjetoEderMello\uconcli.dfm</Transaction>
+    <Transaction>2023/07/06 20:48:55.000.679,=C:\Projetos\ProjetoEderMello\Unit1.pas</Transaction>
+    <Transaction>2023/07/06 20:50:56.000.489,C:\Projetos\ProjetoEderMello\Unit1.pas=C:\Projetos\ProjetoEderMello\ualtcli.pas</Transaction>
+    <Transaction>2023/07/06 20:50:56.000.489,C:\Projetos\ProjetoEderMello\Unit1.dfm=C:\Projetos\ProjetoEderMello\ualtcli.dfm</Transaction>
+    <Transaction>2023/07/11 21:38:14.000.590,=C:\Projetos\ProjetoEderMello\Unit1.pas</Transaction>
+    <Transaction>2023/07/11 22:08:00.000.133,C:\Projetos\ProjetoEderMello\ubuscaaltcli.dfm=C:\Projetos\ProjetoEderMello\Unit1.dfm</Transaction>
+    <Transaction>2023/07/11 22:08:00.000.132,C:\Projetos\ProjetoEderMello\ubuscaaltcli.pas=C:\Projetos\ProjetoEderMello\Unit1.pas</Transaction>
+    <Transaction>2023/07/13 20:37:35.000.590,C:\Projetos\ProjetoEderMello\ualtcli.dfm=C:\Projetos\ProjetoEderMello\uexccli.dfm</Transaction>
+    <Transaction>2023/07/13 20:37:35.000.590,C:\Projetos\ProjetoEderMello\ualtcli.pas=C:\Projetos\ProjetoEderMello\uexccli.pas</Transaction>
+    <Transaction>2023/07/13 20:40:16.000.254,=C:\Projetos\ProjetoEderMello\ualtcli.pas</Transaction>
+    <Transaction>2023/07/13 20:56:47.000.832,C:\Projetos\ProjetoEderMello\ubuscaaltcli.dfm=C:\Projetos\ProjetoEderMello\ubuscaexccli.dfm</Transaction>
+    <Transaction>2023/07/13 20:56:47.000.832,C:\Projetos\ProjetoEderMello\ubuscaaltcli.pas=C:\Projetos\ProjetoEderMello\ubuscaexccli.pas</Transaction>
+    <Transaction>2023/07/13 21:12:43.000.744,=C:\Projetos\ProjetoEderMello\ubuscaaltcli.pas</Transaction>
+  </Transactions>
+</BorlandProject>
